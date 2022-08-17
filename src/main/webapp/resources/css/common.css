@@ -1,0 +1,50 @@
+
+@charset "UTF-8";
+/* 공통 */
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #000;}
+input[type="text"], [type="password"]{width: 200px; height: 25px;}
+input[type="submit"], input[type="reset"], 
+input[type="button"]{width: 60px; height: 30px;}
+
+
+/* container */
+#container{width: 100%; margin: 0 auto; text-align: center;}
+.title{height: 130px; background: white; line-height: 130px;
+    margin-bottom: 20px;}
+.msg{height: 80px; background: pink; line-height: 80px; color: brown;}
+h1{font-size: 48px;}
+
+
+/* table 스타일 */
+.tbl{width: 450px; margin: 0 auto;}
+.tbl, td{border: 1px solid #ccc; 
+	border-collapse: collapse; padding: 10px;}
+.tbl_list, .tbl_write, .tbl_bo_view{width: 700px; margin: 0 auto;}
+.tbl_write, .tbl_bo_view, th, td{border: 1px solid #ccc; 
+	border-collapse: collapse; padding: 10px;}
+.btnWrite{height: 40px; text-align: right; margin-right: 30%;}
+.btnWrite button{width: 80px; height:40px; margin-top: 20px;}
+.tbl_write .w_title{width: 650px; height: 25px;}
+.tbl_write, textarea{width: 650px;}
+.tbl_bo_view .bo_v_title, .tbl_bo_view .bo_v_id{width: 580px; height: 25px;}
+.tbl_bo_view textarea{width: 580px;}
+.tbl_bo_view td:nth-child(1){width: 100px; background: #eee;}
+
+
+.fade-in-box {
+  display: inline-block;
+  padding: 10px;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform:translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
